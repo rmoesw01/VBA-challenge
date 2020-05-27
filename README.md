@@ -2,21 +2,18 @@
 VBA scripting to analyze real stock market data
 
 Data File Format requirements:
-<p style="margin-left: 40px">
 <br>	Macro-enabled excel format
 <br>	All columns must have headers in the first row
-<br>	Column Values:
-	<p style="margin-left: 80px">
+<br><b>	Column Values:</b>
 <br>		column A: ticker symbol 
 <br>		column B: date 
 <br>		column C: opening value
 <br>		column F: closing value
 <br>		column G: stock volume
-<br>	</p>
+<br>
 <br>	columns H through Q should be blank
 <br>
 <br> 	Data must be sorted first by ticker column(A), then by date column(B) (smallest to largest)
-</p>
 <br>
 <br>**** CAUTION **** This program does not allow for skipped rows, please make sure your data is all together
 <br>
@@ -27,17 +24,12 @@ Data File Format requirements:
 <br>4. select and run the Macro called VBAStocks2
 <br>
 <br>Output:
-<p style="margin-left: 40px">
-<br>	Columns H through K will output one row for each unique Ticker in the worksheet with the format shown below
-	<p style="margin-left: 80px">
+<br><b>	Columns H through K will output one row for each unique Ticker in the worksheet with the format shown below</b>
 <br>		Column H: Ticker Symbol
 <br>		Column I: Yearly Change - the difference of the closing value at the end of the year and the opening value at the beginning of the year
 <br>		Column J: Percent Change - the percent change of the Yearly Change / opening value
 <br>		Column K: Total Stock Volume - the sum of the stock volume for the ticker for the year
-	</p>
-<br>	Columns O through Q will output the greatest percent increase, percent decrease, and total stock volume for the worksheet with the format shown below
-	<p style="margin-left: 80px">
+<br><b>	Columns O through Q will output the greatest percent increase, percent decrease, and total stock volume for the worksheet with the format shown below</b>
 <br>		Column O: labels
 <br>		Column P: Ticker Symbol
 <br>		Column Q: value of the greatest value
-</p></p>
