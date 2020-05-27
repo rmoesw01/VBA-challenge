@@ -2,18 +2,21 @@
 VBA scripting to analyze real stock market data
 
 Data File Format requirements:
-<br><TAB INDENT=5>	Macro-enabled excel format
-<br><TAB INDENT=5>	All columns must have headers in the first row
-<br><TAB INDENT=5>	Column Values:
-<br><TAB INDENT=10>		column A: ticker symbol 
-<br><TAB INDENT=10>		column B: date 
-<br><TAB INDENT=10>		column C: opening value
-<br><TAB INDENT=10>		column F: closing value
-<br><TAB INDENT=10>		column G: stock volume
+<p style="margin-left: 40px">
+<br>	Macro-enabled excel format
+<br>	All columns must have headers in the first row
+<br>	Column Values:
+	<p style="margin-left: 80px">
+<br>		column A: ticker symbol 
+<br>		column B: date 
+<br>		column C: opening value
+<br>		column F: closing value
+<br>		column G: stock volume
+<br>	</p>
+<br>	columns H through Q should be blank
 <br>
-<br><TAB INDENT=5>	columns H through Q should be blank
-<br>
-<br><TAB INDENT=5> 	Data must be sorted first by ticker column(A), then by date column(B) (smallest to largest)
+<br> 	Data must be sorted first by ticker column(A), then by date column(B) (smallest to largest)
+</p>
 <br>
 <br>**** CAUTION **** This program does not allow for skipped rows, please make sure your data is all together
 <br>
@@ -24,12 +27,17 @@ Data File Format requirements:
 <br>4. select and run the Macro called VBAStocks2
 <br>
 <br>Output:
-<br><TAB INDENT=5>	Columns H through K will output one row for each unique Ticker in the worksheet with the format shown below
-<br><TAB INDENT=10>		Column H: Ticker Symbol
-<br><TAB INDENT=10>		Column I: Yearly Change - the difference of the closing value at the end of the year and the opening value at the beginning of the year
-<br><TAB INDENT=10>		Column J: Percent Change - the percent change of the Yearly Change / opening value
-<br><TAB INDENT=10>		Column K: Total Stock Volume - the sum of the stock volume for the ticker for the year
-<br><TAB INDENT=5>	Columns O through Q will output the greatest percent increase, percent decrease, and total stock volume for the worksheet with the format shown below
-<br><TAB INDENT=10>		Column O: labels
-<br><TAB INDENT=10>		Column P: Ticker Symbol
-<br><TAB INDENT=10>		Column Q: value of the greatest value
+<p style="margin-left: 40px">
+<br>	Columns H through K will output one row for each unique Ticker in the worksheet with the format shown below
+	<p style="margin-left: 80px">
+<br>		Column H: Ticker Symbol
+<br>		Column I: Yearly Change - the difference of the closing value at the end of the year and the opening value at the beginning of the year
+<br>		Column J: Percent Change - the percent change of the Yearly Change / opening value
+<br>		Column K: Total Stock Volume - the sum of the stock volume for the ticker for the year
+	</p>
+<br>	Columns O through Q will output the greatest percent increase, percent decrease, and total stock volume for the worksheet with the format shown below
+	<p style="margin-left: 80px">
+<br>		Column O: labels
+<br>		Column P: Ticker Symbol
+<br>		Column Q: value of the greatest value
+</p></p>
