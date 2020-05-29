@@ -1,7 +1,7 @@
 # VBA-challenge
 VBA scripting to analyze real stock market data
 
-##Data File Format requirements:
+## Data File Format requirements:
 *	Macro-enabled excel format
 *	All columns must have headers in the first row
 *	Column Values:
@@ -17,13 +17,13 @@ VBA scripting to analyze real stock market data
 
 **** CAUTION **** This program does not allow for skipped rows, please make sure your data is all together
 
-##To run the script on your data file, complete the following steps:
+## To run the script on your data file, complete the following steps:
 1. open your macro-enabled excel file
-2. sort all worksheets in your workbook to meet the above requirements
-3. import VBAStocks_release.bas into your spreadsheet
-4. select and run the Macro called VBAStocks2
+1. sort all worksheets in your workbook to meet the above requirements
+1. import VBAStocks_release.bas into your spreadsheet
+1. select and run the Macro called VBAStocks2
 
-##Output:
+## Output:
 *	Columns H through K will output one row for each unique Ticker in the worksheet with the format shown below
 	*	Column H: Ticker Symbol
 	*	Column I: Yearly Change - the difference of the closing value at the end of the year and the opening value at the beginning of the year
